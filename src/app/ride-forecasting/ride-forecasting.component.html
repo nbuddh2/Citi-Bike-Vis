@@ -1,0 +1,59 @@
+<nz-content class="main">
+  <div class="left-section" style="min-width: 400px">
+    <h1>Ride Forecasting</h1>
+
+    <div id="graph" style="width: 100%; height: 400px; display: none">
+      <iframe id="plot" width="100%" height="100%" frameBorder="0"></iframe>
+    </div>
+    <div>
+      <a href="/">Station Analysis</a>
+      &nbsp;
+      <a href="/statistics">Statistical Analysis</a>
+    </div>
+   
+  </div>
+  <div id="side" class="right-section">
+    <ride-map-box></ride-map-box>
+  </div>
+</nz-content>
+<!-- 
+<div class="main">
+  <ride-map-box></ride-map-box>
+  <div class="left-section">
+    <nz-select
+      id="selector"
+      [nzMode]="Mode"
+      style="width: 80%"
+      nzPlaceHolder="Select Station"
+      [nzMaxMultipleCount]="maxMultipleCount"
+      [(ngModel)]="selectedStations"
+      (ngModelChange)="selectStation($event)"
+    >
+      <nz-option
+        *ngFor="let station of stationList"
+        [nzLabel]="station.label"
+        [nzValue]="station.value"
+      >
+      </nz-option>
+    </nz-select>
+    <nz-select
+      style="width: 80%"
+      nzPlaceHolder="Select Duration"
+      [(ngModel)]="selectedDuration"
+      (ngModelChange)="selectMonth($event)"
+    >
+      <nz-option
+        *ngFor="let option of durationOptions"
+        [nzLabel]="option.label"
+        [nzValue]="option.value"
+      >
+      </nz-option>
+    </nz-select>
+  </div>
+  <div class="right-section">
+    <div id="graph"></div>
+  </div>
+  <div id="map">
+  </div>
+
+</div> -->
