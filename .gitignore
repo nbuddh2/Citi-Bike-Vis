@@ -6,7 +6,6 @@
 /node_modules
 /package-lock.json
 /src/assets/
-/src/assets/stations
 /.idea
 .project
 .classpath
